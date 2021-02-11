@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@android:color/transparent"
+    >
+
+    <LinearLayout
+        android:layout_width="280dp"
+        android:layout_height="480dp"
+        android:orientation="vertical"
+        android:layout_gravity="center"
+        android:gravity="center"
+        android:background="@drawable/rounded_corner_yellow"
+        >
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:layout_width="150dp"
+            android:layout_height="150dp"
+            android:src="@drawable/mydraw"
+            />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginVertical="20dp"
+            android:text="나의 이름"
+            android:textSize="24sp"
+            android:textStyle="bold"
+            />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="나의 설명 \n 나의 취미 \n 나의 좌우명"
+            android:textSize="14sp"
+            android:gravity="center"
+            android:layout_marginBottom="20dp"
+            android:textColor="#706C6C"
+            />
+        <Button
+            android:id="@+id/blog_btn"
+            android:layout_width="200dp"
+            android:layout_height="43dp"
+            android:background="@drawable/rounded_corner_purple"
+            app:backgroundTint="@null"
+            android:layout_marginBottom="10dp"
+            android:text="블로그"
+            android:textColor="#F6F1FB"
+            />
+        <Button
+            android:id="@+id/github_btn"
+            android:layout_width="200dp"
+            android:layout_height="43dp"
+            android:background="@drawable/rounded_corner_purple"
+            app:backgroundTint="@null"
+            android:text="github"
+            android:textColor="#F6F1FB"
+            android:textAllCaps="false"
+            />
+    </LinearLayout>
+</FrameLayout>
